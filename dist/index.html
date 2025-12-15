@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star News Project</title>
+  <script type="module" crossorigin src="./assets/index-BYpFWRu8.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-qWPVuFQg.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header>
+            <!-- Top Bar -->
+            <div class="header-top-bar">
+                <div class="container">
+                    <div class="header-top-content">
+                        <div class="d-flex flex-column">
+                            <span class="weather-info">İSTANBUL <b>15°C / 7°C</b></span>
+                            <span class="weather-desc">Parçalı bulutlu, güneşli</span>
+                        </div>
+                        <!-- Logo Section -->
+                        <div class="header-logo-section">
+                            <div class="container">
+                                <div class="logo-wrapper">
+
+                                    <a href="/" class="logo-link">
+                                        <img src="./assets/starlogo2025-Dybgo6K_.png" alt="Star" class="logo-image">
+                                    </a>
+                                    <div class="mt-1">
+                                        <span id="currentDate" data-gregorian="5 Mart 2021 Cuma" data-hijri="21 Recep 1442"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-top-right">
+
+                            <div class="prayer-time">
+                                <button class="night-mode-btn" id="themeToggle" type="button" aria-label="Gece modu">
+                                    <i class="fas fa-sun" id="themeIcon"></i>
+                                    <span style="font-size: 0.7rem;" id="themeText"></span>
+                                </button>
+                                <div class="prayer-location">İSTANBUL <span class="time-counter">00:52:50</span></div>
+                                <div class="prayer-desc">İkindi kalan süre</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Navigation Bar -->
+            <nav class="header-nav">
+                <div class="container">
+                    <div class="nav-content">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">SON DAKİKA</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">GÜNCEL</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">DÜNYA</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">EKONOMİ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">SPOR</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">YAŞAM</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">BİLİM-TEKNOLOJİ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">AÇIK GÖRÜŞ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">YAZARLAR</a></li>
+                        </ul>
+                        <button class="nav-menu-toggle" type="button" aria-label="Menü">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Header Widget -->
+            <div class="header-widget">
+                <div class="container">
+                    <div class="header-widget-content">
+                        <!-- Financial Information -->
+                        <div class="financial-info">
+                            <span class="financial-item">DOLAR <strong>7,4873</strong></span>
+                            <span class="financial-item">EURO <strong>8,9491</strong></span>
+                            <span class="financial-item">ALTIN <strong>408,713</strong></span>
+                            <span class="financial-item">BIST100 <strong>1542,2</strong></span>
+                        </div>
+
+                        <!-- Navigation Links with Icons -->
+                        <div class="widget-nav-links">
+                            <a href="#" class="widget-nav-link">
+                                <i class="fas fa-regular fa-images"></i>
+                                <span>FOTO GALERI</span>
+                            </a>
+                            <a href="#" class="widget-nav-link">
+                                <i class="fas fa-play widget-icon"></i>
+                                <span>VIDEO GALERI</span>
+                            </a>
+                            <a href="#" class="widget-nav-link">
+                                <i class="fas fa-video widget-icon"></i>
+                                <span>CANLI YAYIN</span>
+                            </a>
+                        </div>
+
+                        <!-- Social Media Icons and Search -->
+                        <div class="widget-social-search">
+                            
+                            <a href="https://www.facebook.com/stargazete" class="social-icon" aria-label="Facebook" target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://x.com/stargazete" class="social-icon" aria-label="Twitter/X" target="_blank">
+                                <i class="fab fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/stargazete/" class="social-icon" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/channel/UCv4lXYH3XXLUHl54aykON0A" class="social-icon" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                          
+                        </div>
+
+                        <div class="widget-social-search">
+
+                              <button  class="search-icon" aria-label="Search" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- breaking news -->
+        <div class="breaking-news-section">
+            <div class="container">
+                <div class="breaking-news-wrapper">
+                    <div class="breaking-news-label">
+                        <span class="label-text">SON</span>
+                        <span class="label-text">DAKİKA</span>
+                    </div>
+                    <div class="breaking-news-divider"></div>
+                    <button class="breaking-news-prev" aria-label="Önceki haber">
+                        <i class="fas fa-chevron-left"></i>
+
+                    </button>
+                    <div class="swiper breaking-news-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide breaking-news-item">
+                                <span class="news-time">16:00</span>
+                                <span class="news-text">Sosyal medyada şehitlerimize hakaret etmişti... Yakalandı</span>
+                            </div>
+                            <div class="swiper-slide breaking-news-item">
+                                <span class="news-time">15:00</span>
+                                <span class="news-text">AB'den Ürdün ve Lübnan'daki Suriyelilere destek</span>
+                            </div>
+                            <div class="swiper-slide breaking-news-item">
+                                <span class="news-time">14:53</span>
+                                <span class="news-text">Komşuda uçak kaçırma girişimi</span>
+                            </div>
+                            <div class="swiper-slide breaking-news-item">
+                                <span class="news-time">14:00</span>
+                                <span class="news-text">Türkiye'de yeni ekonomi paketi açıklandı</span>
+                            </div>
+                            <div class="swiper-slide breaking-news-item">
+                                <span class="news-time">13:42</span>
+                                <span class="news-text">İstanbul'da trafik yoğunluğu arttı</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="breaking-news-next" aria-label="Sonraki haber">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- main home -->
+
+        <section class="main-home-section mt-2">
+            <div class="container">
+                <!-- Advertisement Banner -->
+                <div class="row advertisement-banner">
+                    <div class="col ad-banner-content">
+                        <div class="ad-banner" role="img" aria-label="Yılbaşı reklamı">
+                            <img src="./assets/banner-BeCBE0Bh.png" alt="Advertisement Banner" class="ad-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-home-section mt-2">
+            <div class="container">
+                <!-- Featured Article -->
+                <div class="row featured-article">
+                    <div class="col featured-image-wrapper">
+                        <img src="./assets/haber1-LoLoF0HB.jpg" alt="CHP'nin 'Cemevi' provokasyonuna sert tepki"
+                            class="featured-image" id="featuredImage">
+                        <div class="content featured-overlay">
+                            <h3 class="featured-headline" id="featuredHeadline">Şehitlerimize dualarla veda... Başkan Erdoğan: Komutanlığın ötesinde duruşuyla çok değerliydi.
+                            </h3>
+                        </div>
+                    </div>
+                   
+                    </div>
+                </div>
+
+                <!-- News Snippets Row -->
+                 <div class="container">
+                     <div class=" news-snippets-row">
+                        
+                    <article class="news-snippet active" data-index="0">
+                        <div class="snippet-thumbnail">
+                            <img src="./assets/haber1-LoLoF0HB.jpg" alt="Şehitlerimize dualarla veda...">
+                        </div>
+                        <h3 class="snippet-headline">Şehitlerimize dualarla veda... Başkan Erdoğan: Komutanlığın ötesinde duruşuyla çok değerliydi.</h3>
+                    </article>
+                    <div class="snippet-divider"></div>
+                    <article class="news-snippet" data-index="1">
+                        <div class="snippet-thumbnail">
+                            <img src="./assets/bir-tasla-uc-kus-yunanistan-CFN_55BQ.jpg" alt="Bir taşla üç kuş: Yunanistan, Rumlar ve Fransa panikte!">
+                        </div>
+                        <h3 class="snippet-headline">Bir taşla üç kuş: Yunanistan, Rumlar ve Fransa panikte! Yeni bir Türkiye cephesi oluşuyor</h3>
+                    </article>
+                    <div class="snippet-divider"></div>
+                    <article class="news-snippet" data-index="2">
+                        <div class="snippet-thumbnail">
+                            <img src="./assets/turkiyenato-DqrCEWfb.webp" alt="Nato Avrupa Birliğini uyardı. Türkiye'ye övgü.Bölgedeki rolü vurgulandı.">
+                        </div>
+                        <h3 class="snippet-headline">Nato Avrupa Birliğini uyardı. Türkiye'ye övgü.Bölgedeki rolü vurgulandı.
+                        </h3>
+                    </article>
+                    <div class="snippet-divider"></div>
+                    <article class="news-snippet" data-index="3">
+                        <div class="snippet-thumbnail">
+                            <img src="./assets/korgeneral-osman-erbas-Bj_9exPm.jpg" alt="Şehit Korgeneral Osman Erbaş'ın FETÖ'cü hain için 'vur' emri verdiği ortaya çıktı">
+                        </div>
+                        <h3 class="snippet-headline">Şehit Korgeneral Osman Erbaş'ın FETÖ'cü hain için 'vur' emri verdiği ortaya çıktı</h3>
+                    </article>
+                    <div class="snippet-divider"></div>
+                    <article class="news-snippet" data-index="4">
+                        <div class="snippet-thumbnail">
+                            <img src="./assets/oramiral-davidson-lKJCojuJ.jpg" alt="Oramiral Davidson'dan uyarı: Hava hareketliliğini artırdılar, gelecek 6 yıl için çok kaygılıyım">
+                        </div>
+                        <h3 class="snippet-headline">Oramiral Davidson'dan uyarı: Hava hareketliliğini artırdılar, gelecek 6 yıl için çok kaygılıyım.</h3>
+                    </article>
+                </div>
+                 </div>
+               
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

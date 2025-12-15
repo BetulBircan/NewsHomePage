@@ -1,0 +1,60 @@
+// Bootstrap Font Override - Bootstrap import'undan önce tanımlanmalı
+$font-family-sans-serif: "Poppins", sans-serif !default;
+
+// 1. Temel Renk Tanımlamaları (Abstrak Renkler)
+$color-pure-black: rgb(0, 0, 0);
+$color-pure-white: rgb(255, 255, 255);
+$color-red-primary: rgb(230, 0, 0);
+$color-red-dark: rgb(208, 2, 25);
+$color-blue-link: rgb(26, 94, 139);
+$color-blue-bright: rgb(52, 152, 219);
+$color-green-success: rgb(65, 130, 74);
+$color-green-light: rgb(77, 150, 81);
+$color-yellow: rgb(255, 241, 0);
+$gradient-linear: linear-gradient(rgb(244, 0, 0) 0px, rgb(183, 0, 0) 100%);
+
+:root {
+  // Varsayılan olarak Light Tema (Paylaştığın 2. palet)
+  --bg-primary: rgb(255, 255, 255);
+  --bg-secondary: rgb(241, 241, 241);
+  --bg-tertiary: rgb(224, 224, 224);
+
+  --text-primary: #{$color-pure-black};
+  --text-secondary: rgb(85, 85, 85);
+  --text-on-dark: #{$color-pure-white};
+  --brand-primary: #{$color-red-primary};
+  --brand-secondary: #{$color-red-dark};
+
+  --status-success: #{$color-green-success};
+  --status-info: #{$color-blue-bright};
+  --status-warning: #{$color-yellow};
+
+  --gray-light: rgb(199, 199, 199);
+  --gray-medium: rgb(158, 158, 158);
+
+  // Header-specific background (allows different header color than page bg)
+  --header-bg: var(--bg-primary);
+
+  // Overlay/Opacity renkleri
+  --overlay-heavy: rgba(0, 0, 0, 0.7);
+  --overlay-medium: rgba(0, 0, 0, 0.5);
+  --overlay-light: rgba(0, 0, 0, 0.4);
+  --bg-gradient-linear: linear-gradient(rgb(244, 0, 0) 0px, rgb(183, 0, 0) 100%);
+}
+
+[data-theme="dark"] {
+  // Dark Tema (Paylaştığın 1. palet farkları)
+  --bg-primary: #{$color-pure-black};
+  --bg-secondary: rgb(27, 27, 27);
+  --bg-tertiary: rgb(53, 53, 53);
+  --bg-quaternary: rgb(64, 64, 64);
+
+  --text-primary: #{$color-pure-white};
+  --text-secondary: rgb(199, 199, 199);
+
+  // Dark modda bazı gri tonları daha koyu tercih edilebilir
+  --gray-medium: rgb(85, 85, 85);
+
+  // Header background for dark mode (match screenshot darker-gray)
+  --header-bg: rgb(54, 54, 54);
+}
