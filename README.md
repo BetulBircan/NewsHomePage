@@ -63,3 +63,5 @@ news-homepage/
 
 ## Proje Açıklaması
 Haber sitesinin anasayfa tasarımı yapılmıştır. Anasayfada banner, menüler, gece modu-gündüz modu, sliderlar eklenmiştir. Sosyal medya ikonları eklenip sosyal medya hesapları sayfaları eklenmiştir.
+
+<video src="https://github.com/user-attachments/assets/b37220ea-c186-479d-b95e-9029e1a45305" controls width="800"></video>
