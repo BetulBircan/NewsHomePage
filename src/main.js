@@ -28,7 +28,6 @@ function initDate(overrides) {
     const dateElement = document.getElementById('currentDate');
     if (!dateElement) return;
 
-    // 1) Check for explicit overrides passed as argument
     if (overrides && (overrides.gregorian || overrides.hijri)) {
         const g = overrides.gregorian || '';
         const h = overrides.hijri ? ` / ${overrides.hijri}` : '';
@@ -36,7 +35,6 @@ function initDate(overrides) {
         return;
     }
 
-    // 2) Check for data-attributes on the element (allows setting in HTML)
     const dataGregorian = dateElement.dataset.gregorian; // full display string
     const dataHijri = dateElement.dataset.hijri; // full display string
     if (dataGregorian || dataHijri) {
@@ -45,7 +43,6 @@ function initDate(overrides) {
         return;
     }
 
-    // 3) Fallback to original dynamic calculation
     const now = new Date();
     const days = ['Pazar', 'Pazartesi', 'Salı', 'Çarşamba', 'Perşembe', 'Cuma', 'Cumartesi'];
     const months = [
@@ -168,6 +165,8 @@ function adjustBreakingPrevPosition() {
     section.style.setProperty('--breaking-label-edge', value);
     wrapper.style.setProperty('--breaking-label-edge', value);
 }
+
+
 
 
 
